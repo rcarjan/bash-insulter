@@ -1,4 +1,5 @@
-# bash-insulter
+# zsh-insulter
+This repository has been forked from [hkbakke/bash-insulter](https://github.com/hkbakke/bash-insulter).
 Randomly insults the user when typing wrong command.
 
 Change insults as needed :)
@@ -23,13 +24,13 @@ kevin@ubuntu:~ $ sp aux
 
 # Installation
 
-    git clone https://github.com/hkbakke/bash-insulter.git bash-insulter
-    sudo cp bash-insulter/src/bash.command-not-found /etc/
+    git clone https://github.com/rcarjan/zsh-insulter.git bash-insulter
+    sudo cp zsh-insulter/src/zsh.command-not-found /etc/
 
-Then source the file automatically for new logins by adding the following to `/etc/bash.bashrc`:
+Then source the file automatically for new logins by adding the following to `/etc/zsh/zshrc`:
 ```
-if [ -f /etc/bash.command-not-found ]; then
-    . /etc/bash.command-not-found
+if [ -f /etc/zsh.command-not-found ]; then
+    . /etc/zsh.command-not-found
 fi
 ```
 Login again and type some invalid commands for the effects to be visible.
